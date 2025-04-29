@@ -9,21 +9,33 @@ const Contato = () => {
 
       <div className="contato-info">
         <div className="contato-item whatsapp">
-          <a href="https://wa.me/55XX999999999" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/55924915412"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaWhatsapp />
             <span>WhatsApp</span>
           </a>
         </div>
 
         <div className="contato-item linkedin">
-          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/abdaisy-cravid-05540230a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin />
             <span>LinkedIn</span>
           </a>
         </div>
 
         <div className="contato-item github">
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/deisy321"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
             <span>GitHub</span>
           </a>
