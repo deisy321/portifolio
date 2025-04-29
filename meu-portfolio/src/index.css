@@ -208,3 +208,150 @@ body {
     font-size: 2.5rem;
   }
 }
+
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --text-color: #1f2937;
+  --bg-color: #f3f4f6;
+  --nav-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* Ajustes para a seção de Contato */
+.contato-section {
+  padding: 3rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.contato-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.contato-section p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contato-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap; /* Garante que fiquem na horizontal */
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px; /* Agora com borda arredondada, mas sem fundo */
+  background-color: transparent; /* Remove o fundo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: auto; /* Deixa o contêiner do ícone ajustável */
+  height: auto; /* Ajustável ao conteúdo */
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-item svg {
+  width: 2rem; /* Ajusta o tamanho do ícone */
+  height: 2rem;
+}
+
+.contato-item span {
+  font-size: 1.1rem; /* Ajusta o tamanho da fonte para o texto */
+  color: var(--text-color);
+  font-weight: 500;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Estilos para os ícones de contato */
+.whatsapp {
+  color: #25d366; /* Cor original do WhatsApp */
+}
+
+.linkedin {
+  color: #0077b5; /* Cor original do LinkedIn */
+}
+
+.github {
+  color: #333; /* Cor original do GitHub */
+}
+
+.contato-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contato-info {
+    flex-direction: column; /* Organiza os itens em coluna para telas menores */
+    gap: 1.5rem;
+  }
+
+  .contato-item {
+    padding: 1rem;
+  }
+
+  .contato-item span {
+    font-size: 1rem; /* Ajusta o tamanho da fonte em telas menores */
+  }
+}
+.sobre-mim-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.sobre-mim-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}.foto-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color); /* Borda azul baseada na sua variável */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+}
+
+.foto-container img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .foto-container img {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -1,5 +1,6 @@
 import CertificacaoCard from './components/CertificacaoCard';
-
+import SobreMim from './components/SobreMim'; // Adicione esta linha para importar o componente SobreMim
+import Contato from './components/Contato'
 function App() {
   return (
     <>
@@ -7,7 +8,7 @@ function App() {
         <div className="nav-container">
           <a href="#" className="logo">Abdaisy Conceição</a>
           <div className="nav-links">
-            <a href="#sobre">Sobre</a>
+          <a href="#sobre-mim">Sobre Mim</a>
             <a href="#certificacoes">Certificações</a>
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
@@ -28,11 +29,40 @@ function App() {
           </div>
         </section>
 
+        {/* Seção Sobre Mim */}
+        <SobreMim /> {/* Aqui estamos incluindo a seção Sobre Mim */}
+
         <section id="certificacoes" className="section">
           <h2 className="section-title">Certificações</h2>
           <div className="grid">
+            {/* Seu CertificacaoCard original */}
             <CertificacaoCard />
-            {/* Você pode adicionar mais cards de certificação aqui */}
+
+            {/* Novas certificações */}
+            <div className="card certificacao-card">
+              <div 
+                data-iframe-width="150" 
+                data-iframe-height="270" 
+                data-share-badge-id="ee1a5395-cb5c-4fdc-8e21-3441e415017b" 
+                data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+            <div className="card certificacao-card">
+              <div 
+                data-iframe-width="150" 
+                data-iframe-height="270" 
+                data-share-badge-id="54979f21-fd85-440e-b746-cb937133816d" 
+                data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+            <div className="card certificacao-card">
+              <div 
+                data-iframe-width="150" 
+                data-iframe-height="270" 
+                data-share-badge-id="93eb08ea-4b9e-406c-b3bc-c381344dcc69" 
+                data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
           </div>
         </section>
 
@@ -48,14 +78,17 @@ function App() {
                 <a href="#" className="btn">GitHub</a>
               </div>
             </div>
-            {/* Mais cards de projeto */}
           </div>
         </section>
+        {/* Seção de Contato */}
+        <Contato /> {/* Aqui estamos incluindo a seção Contato */}
 
-        {/* Adicione as outras seções seguindo o mesmo padrão */}
       </main>
+
+      {/* Script do Credly para os badges de certificação */}
+      <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
